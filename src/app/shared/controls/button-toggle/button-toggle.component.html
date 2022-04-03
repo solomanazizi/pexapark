@@ -1,0 +1,3 @@
+<mat-button-toggle-group (change)="onChange($event.value)" [value]="initialButton?.value">
+  <mat-button-toggle *ngFor="let button of buttons" [value]="button.value">{{button.label}}</mat-button-toggle>
+</mat-button-toggle-group>

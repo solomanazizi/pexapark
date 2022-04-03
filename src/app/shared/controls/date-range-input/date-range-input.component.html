@@ -1,0 +1,11 @@
+<mat-form-field>
+  <mat-label>Select A Date Range</mat-label>
+  <mat-date-range-input [formGroup]="formGroup" [rangePicker]="picker">
+    <input matStartDate formControlName="startDate" placeholder="Start Date">
+    <input matEndDate formControlName="endDate" placeholder="End Date" (dateChange)="onChange()">
+  </mat-date-range-input>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-date-range-picker #picker></mat-date-range-picker>
+
+  <mat-error>{{startDate.invalid ? 'Invalid start date' : 'Invalid end Date'}}</mat-error>
+</mat-form-field>

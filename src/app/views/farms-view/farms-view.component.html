@@ -1,0 +1,19 @@
+<div
+  *ngIf="farms$ | async"
+  fxFill
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  fxLayoutGap="20px"
+>
+  <h1>Please Select A Farm</h1>
+  <div fxLayout.lt-md="column" fxLayoutGap="20px">
+    <app-farm-tile
+      *ngFor="let farm of farms$ | async"
+      [farm]="farm"
+      (click)="onFarmClick(farm.id)"
+      class="cursor-pointer"
+      fxFlex="200px"
+      fxFlex.lt-md="auto"
+    ></app-farm-tile>
+  </div>
+</div>

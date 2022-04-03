@@ -1,0 +1,11 @@
+mat-card {
+  transition: background-color 0.5s ease-out;
+
+  &:hover {
+    background-color: darkolivegreen;
+    color: white;
+    mat-card-subtitle {
+      color: white;
+    }
+  }
+}
