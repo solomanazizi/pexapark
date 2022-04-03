@@ -10,19 +10,19 @@
       "id": 2,
       "name": "Farm 2",
       "type": "wind",
-      "totalCapacity": 10
+      "totalCapacity": 15
     },
     {
       "id": 3,
       "name": "Farm 3",
       "type": "solar",
-      "totalCapacity": 10
+      "totalCapacity": 12.5
     },
     {
       "id": 4,
       "name": "Farm 4",
       "type": "wind",
-      "totalCapacity": 10
+      "totalCapacity": 20
     }
   ],
   "capacity": [
@@ -30,39 +30,44 @@
       "farmId": 1,
       "capacityFactorData": [
         {
-          "value": 0.1,
+          "value": 0.14,
           "date": "01/01/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.2,
+          "value": 0.27,
           "date": "01/02/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.3,
+          "value": 0.89,
           "date": "01/03/2022",
           "completeDataSet": false
         },
         {
-          "value": 0.4,
+          "value": 0.58,
           "date": "01/04/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.5,
+          "value": 0.43,
           "date": "01/05/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.6,
+          "value": 0.62,
           "date": "01/06/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.7,
+          "value": 0.70,
           "date": "01/07/2022",
           "completeDataSet": true
+        },
+        {
+          "value": 0.39,
+          "date": "01/08/2022",
+          "completeDataSet": false
         }
       ]
     },
@@ -70,39 +75,44 @@
       "farmId": 2,
       "capacityFactorData": [
         {
-          "value": 0.1,
+          "value": 0.17,
           "date": "01/01/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.3,
+          "value": 0.35,
           "date": "01/02/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.7,
+          "value": 0.71,
           "date": "01/03/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.4,
+          "value": 0.49,
           "date": "01/04/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.8,
+          "value": 0.86,
           "date": "01/05/2022",
           "completeDataSet": false
         },
         {
-          "value": 0.6,
+          "value": 0.63,
           "date": "01/06/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.9,
+          "value": 0.99,
           "date": "01/07/2022",
           "completeDataSet": false
+        },
+        {
+          "value": 0.31,
+          "date": "01/08/2022",
+          "completeDataSet": true
         }
       ]
     },
@@ -110,38 +120,43 @@
       "farmId": 3,
       "capacityFactorData": [
         {
-          "value": 0.9,
+          "value": 0.92,
           "date": "01/01/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.6,
+          "value": 0.65,
           "date": "01/02/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.8,
+          "value": 0.87,
           "date": "01/03/2022",
           "completeDataSet": false
         },
         {
-          "value": 0.4,
+          "value": 0.44,
           "date": "01/04/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.7,
+          "value": 0.70,
           "date": "01/05/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.3,
+          "value": 0.37,
           "date": "01/06/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.1,
+          "value": 0.12,
           "date": "01/07/2022",
+          "completeDataSet": true
+        },
+        {
+          "value": 0.25,
+          "date": "01/08/2022",
           "completeDataSet": true
         }
       ]
@@ -150,38 +165,43 @@
       "farmId": 4,
       "capacityFactorData": [
         {
-          "value": 0.7,
+          "value": 0.78,
           "date": "01/01/2022",
           "completeDataSet": false
         },
         {
-          "value": 0.6,
+          "value": 0.82,
           "date": "01/02/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.5,
+          "value": 0.90,
           "date": "01/03/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.4,
+          "value": 0.34,
           "date": "01/04/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.3,
+          "value": 0.55,
           "date": "01/05/2022",
           "completeDataSet": true
         },
         {
-          "value": 0.2,
+          "value": 0.47,
           "date": "01/06/2022",
           "completeDataSet": false
         },
         {
-          "value": 0.1,
+          "value": 0.69,
           "date": "01/07/2022",
+          "completeDataSet": true
+        },
+        {
+          "value": 0.22,
+          "date": "01/08/2022",
           "completeDataSet": true
         }
       ]

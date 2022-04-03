@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { UnitsEnum } from '@app/shared/enums/units.enum';
+import { Observable } from 'rxjs';
 import { Farm, FarmCapacityData } from '@app/shared/models/farm.model';
 import {
   selectCapacityFactorData,
@@ -17,14 +16,6 @@ import { loadFarmsCapacity } from '@app/state/root.actions';
 })
 export class CapacityFactorViewService {
   constructor(private store: Store<State>) {}
-
-  buttonClick: BehaviorSubject<string> = new BehaviorSubject<string>(
-    UnitsEnum.CapacityFactor
-  );
-
-  getButtonClick() {
-    return this.buttonClick;
-  }
 
   farmInfo$: Observable<Farm> = this.store.select(
     selectDisplayedFarmInfo

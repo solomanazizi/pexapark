@@ -39,3 +39,5 @@ The data displayed is strictly typed and so models are used to define the data c
 -Implement a tool bar allowing a user to select other farms when already in the capcity factor view
 
 -Allow a search input on the farms view and let user search for farm by name
+
+-Limit the date range picker to only current or past days, disable future day selection

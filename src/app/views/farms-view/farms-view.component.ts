@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { State } from '@app/state/root.reducer';
@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
   selector: 'app-farms-view',
   templateUrl: './farms-view.component.html',
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FarmsViewComponent implements OnInit {
   farms$: Observable<Farm[]> = this.store.pipe(select(selectFarms));

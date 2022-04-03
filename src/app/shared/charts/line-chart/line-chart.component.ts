@@ -1,4 +1,5 @@
 import {
+  ChangeDetectionStrategy,
   Component,
   Input,
   OnChanges,
@@ -12,6 +13,7 @@ import { BaseChartDirective } from 'ng2-charts';
   selector: 'app-line-chart',
   templateUrl: './line-chart.component.html',
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LineChartComponent implements OnChanges {
   @Input() chartDataSets?: number[] | null = [];
@@ -66,11 +68,19 @@ export class LineChartComponent implements OnChanges {
   }
 
   // events
-  chartClicked({ event, active }: { event?: ChartEvent; active?: {}[] }): void {
-    // console.log(event, active);
-  }
+  chartClicked({
+    event,
+    active,
+  }: {
+    event?: ChartEvent;
+    active?: {}[];
+  }): void {}
 
-  chartHovered({ event, active }: { event?: ChartEvent; active?: {}[] }): void {
-    // console.log(event, active);
-  }
+  chartHovered({
+    event,
+    active,
+  }: {
+    event?: ChartEvent;
+    active?: {}[];
+  }): void {}
 }
